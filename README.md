@@ -51,7 +51,7 @@ Automatically send personalized WhatsApp messages to your friends and family for
 
 3. **Build Docker Image**
 
-   ```bash docker build -t whatsapp-bot .```
+   ```docker build -t whatsapp-bot .```
 
 4. **Run Container for First-Time Login**
 
@@ -62,7 +62,7 @@ Automatically send personalized WhatsApp messages to your friends and family for
 5. **Automated Runs**
 
     - After the first login, you can run the container normally or schedule it via cron or cloud schedulers.
-        Example cron job to run daily at 9 AM: ```bash 0 9 * * * docker run --rm -v "/full/path/to/app:/app" whatsapp-bot```
+        Example cron job to run daily at 9 AM: ```0 9 * * * docker run --rm -v "/full/path/to/app:/app" whatsapp-bot```
 
     - Cloud Run / ECS: Deploy container; schedule triggers via Cloud Scheduler / EventBridge.
 
