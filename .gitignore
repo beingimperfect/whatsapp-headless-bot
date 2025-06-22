@@ -1,0 +1,8 @@
+# Ignore credentials and token
+app/credentials.json
+app/token.json
+app/cookies.pkl
+__pycache__/
+*.pyc
+.env
+*.zip
